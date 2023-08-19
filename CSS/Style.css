@@ -1,0 +1,1165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+:root{
+    --green-color: #21aa58;
+    --grey-bcgr: #f1f5f8;
+    --grey-font: #3f4044;
+}
+@font-face{
+    font-family: "Iransans";
+    src : url(../Fonts/Sans\ a4fran3.eot);
+    src : url(../Fonts/Sans\ a4fran3.svg);
+    src : url(../Fonts/Sans\ a4fran3.ttf);
+    src : url(../Fonts/Sans\ a4fran3.woff);
+}
+main{
+    direction: rtl;
+    width: 100%;
+    font-family: Iransans;
+}
+
+/*******************************************************/
+
+
+.navigation-menu{
+    display: flex;
+    justify-content: first baseline;
+    padding: 35px 240px 35px 0;
+    font-weight: lighter;
+    font-size: 10pt;
+}
+.navigation-menu ul{
+    margin-right: 10px;
+}
+.navigation-menu ul li{
+    display: inline-block;
+    margin: 0 20px 0 20px;
+}
+.navigation-menu ul li a{
+    color: var(--grey-font);
+}
+.navigation-menu ul li a:hover{
+    color: var(--green-color);
+}
+
+/***********************************************************/
+
+header{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    background: var(--green-color);
+    color: var(--grey-bcgr);
+}
+.header-info{
+    width: 50%;
+    height: 100%;
+    padding: 20px 280px 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:flex-start;
+}
+.header-info .mobile-p{
+    display: none;
+}
+.header-info input[type="text"]{
+    padding: 15px 15px 15px 110px;
+    background: var(--green-color);
+    border-bottom: 1px solid var(--grey-bcgr);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.header-info input[type="submit"]{
+    background: var(--grey-bcgr);
+    padding: 10px 60px 10px 60px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 10px;
+    color: var(--green-color);
+    font-family: "Iransans";
+    font-weight: bold;
+}
+.header-info input[type="submit"]:hover{
+    cursor: pointer;
+}
+.header-info button{
+    border: none;
+    background: var(--green-color);
+    font-family: "Iransans";
+    font-weight: bold;
+    font-size: 12pt;
+}
+.header-info a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.header-info a{
+    color: var(--grey-bcgr);
+    border-radius: 10px;
+    padding: 12px 60px 12px 60px;
+    border: 1px solid var(--grey-bcgr);
+}
+
+.header-info ::placeholder{
+    color: var(--grey-bcgr);
+    opacity: 70%;
+    font-family: "Iransans";
+}
+.header-image{
+    width: 50%;
+    height: auto;
+    background-image: url(../Images/intro_desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+/**********************************************************/
+
+.download-bar{
+    width:100%;
+    margin: 110px auto;
+    padding: 0 120px 0 120px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.download-bar img{
+    width: 170px;
+    height: 50px;
+    transition: all 1s;
+}
+.download-bar img:hover{
+    transform: scale(1.1);
+}
+/*****************************************************/
+
+.services{
+    width: 100%;
+    background:var(--grey-bcgr);
+    text-align: center;
+    padding: 0 400px 50px 400px;
+}
+.services h2{
+    display: inline-block;
+    color: var(--grey-font);
+    font-size: 24pt;
+    margin: 35px 0 35px 0;
+}
+.services-apps-area{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:35px;
+}
+.services-app{
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px 15px 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+    text-align: right;
+}
+.services-app img{
+    width: 70px;
+    margin-left: 10px;
+    transition: all 1s;
+}
+.services-app img:hover{
+    transform: rotateY(180deg);
+}
+.services-app strong{
+    font-size: 11pt;
+    color: var(--grey-font);
+}
+.services-app p{
+    font-size: 10pt;
+    color: rgb(175, 175, 175);
+}
+
+/*****************************************************/
+
+.food{
+    margin: 70px auto;
+    height: 400px;
+    width: 1320px;
+    background-size: cover;
+    background-image: url(../Images/Food.jpg);
+    background-position: center;
+    border-radius: 15px;
+}
+.food a{
+    display: inline-block;
+    height: 400px;
+    width: 1320px;
+}
+
+/*********************************************/
+
+.info{
+    margin-bottom: 100px;
+}
+.info-top{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    color: var(--grey-font);
+}
+.info-top div{
+width: 50%;
+padding: 30px 40px 0 0px;
+}
+.info-top .info-image{
+    display: inline-block;
+    background-image: url(../Images/super-app.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+}
+.info-top div p{
+    margin-top: 20px;
+    font-size: 10pt;
+    width: 70%;
+}
+.info-bottom{
+    margin: -50px auto;
+    width: 60%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    color: var(--grey-font);
+}
+.info-bottom .bottom-info-image{
+    background: var(--grey-bcgr);
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 20px
+}
+.info-bottom div p{
+    margin : 20px 0; 
+    font-size: 8pt;
+}
+
+/****************************************/
+
+.joinsnapp{
+    background: var(--grey-bcgr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.joinsnapp h4{
+    font-weight: bold;
+    font-size: 24pt;
+    color: var(--grey-font);
+    margin: 30px 0;
+}
+.joinsnapp>p{
+    font-size: 15pt;
+    color: var(--grey-font);
+    margin-bottom: 40px;
+}
+.joinsnapp button{
+    font-family: "Iransans";
+    font-size: 12pt;
+    background: var(--green-color);
+    border: none;
+    padding: 15px 25px;
+    color: var(--grey-bcgr);
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+.joinsnapp button:hover{
+    cursor: pointer;
+}
+.joinsnapp video{
+    width: 70%;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+.joinsnapp-tables{
+    margin: 30px auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:30px
+}
+.joinsnapp-tables .table{
+    padding: 60px 15px;
+    display: flex;
+    background: white;
+    border-radius: 20px;
+}
+.joinsnapp-tables .table strong{
+    color: var(--grey-font);
+}
+.joinsnapp-tables .table p{
+    width: 90%;
+    color: var(--grey-font);
+    margin-top: 10px;
+    font-size: 9pt;
+}
+.joinsnapp-tables .table img{
+    margin: 10px;
+    width: 90px;
+    height: 50px;
+}
+
+/*********************************/
+
+footer ul{
+    margin: 35px auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+footer li{
+    display: inline-block;
+}
+footer li a{
+    color: var(--grey-font);
+    font-size: 10pt;
+}
+footer li a:hover{
+    color: var(--green-color);
+}
+footer .social-media{
+    text-align: center;
+}
+footer .social-media a{
+    margin: 0 10px;
+    font-size: 25pt;
+    color: var(--grey-font);
+}
+footer .trust{
+    margin: 20px 0;
+    text-align: center;
+}
+
+/******************   responsive   *******************/
+
+
+@media screen and (min-width:1200px) and (max-width: 1920px){
+    .navigation-menu{
+        padding: 30px 50px 30px 0;
+    }
+    .navigation-menu ul li{
+        margin: 0 10px 0 10px;
+    }
+    header{
+        height: 500px;
+    }
+    .header-info{
+        padding: 20px 110px 20px 50px;
+    }
+    header .header-info p{
+        display: none;
+    }
+    .header-info .mobile-p{
+        display: block;
+    }
+    .header-info input[type="text"]{
+        padding: 15px 15px 15px 85px;
+    }
+    .header-info input[type="submit"]{
+        padding: 10px 25px 10px 25px;
+        margin-right: 10px;
+    }
+    .header-info button{
+    font-size: 9pt;
+    }
+    .services{
+        padding: 0 150px 50px 150px;
+    }
+    .food{
+        height: 300px;
+        width: 986px;
+    }
+    .food a{
+        height: 300px;
+        width: 986px;
+    }
+    footer ul{
+        margin: 35px auto;
+        width: 80%;
+    } 
+}
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .navigation-menu{
+        padding: 30px 40px 30px 0;
+    }
+    .navigation-menu ul li{
+        margin: 0 10px 0 10px;
+    }
+    .header-info{
+        padding: 20px 90px 20px 30px;
+        width: 60%;
+    }
+    header .header-info p{
+        display: none;
+    }
+    .header-info .mobile-p{
+        display: block;
+    }
+    .header-info input[type="text"]{
+        padding: 15px 15px 15px 80px;
+    }
+    .header-info input[type="submit"]{
+        padding: 10px 25px 10px 25px;
+        margin-right: 10px;
+    }
+    .header-info button{
+    font-size: 9pt;
+    margin-top: 15px;
+    }
+    .services{
+        padding: 0 100px 50px 100px;
+    }
+    .food{
+        height: 280px;
+        width: 976px;
+    }
+    .food a{
+        height: 280px;
+        width: 976px;
+    }
+    footer ul{
+        margin: 35px auto;
+        width: 80%;
+    } 
+}
+@media screen and (min-width:840px) and (max-width:992px){
+    .navigation-menu{
+        padding: 30px 20px 25px 0;
+    }
+    .navigation-menu ul li a{
+        font-size: 9pt;
+    }
+    .navigation-menu ul li{
+        margin: 0 7px 0 7px;
+    }
+    header .header-info{
+        padding: 10px 50px 20px 20px;
+        width: 70%;
+    }
+    .header-info input[type="text"]{
+        padding: 15px 15px 15px 80px;
+    }
+    .header-info input[type="submit"]{
+        padding: 10px 20px 10px 20px;
+        margin-right: 10px;
+    }
+    .header-info button{
+    font-size: 9pt;
+    }
+    .download-bar{
+        width:100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 15;
+        margin: 20px auto;
+    }
+    .services{
+        padding: 0 140px 50px 140px;
+    }
+    .services-app{
+        background-color: white;
+        border-radius: 20px;
+        padding: 10px 15px 10px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .services-app img{
+        width: 50px;
+    }
+    .services-app strong{
+        font-size: 10pt;
+        color: var(--grey-font);
+    }
+    .services-app p{
+        font-size: 9pt;
+        color: rgb(175, 175, 175);
+    }
+    .food{
+        height: 200px;
+        width: 786px;
+    }
+    .food a{
+        height: 200px;
+        width: 786px;
+    }
+    .info{
+        margin-bottom: 0;
+    }
+    .info-top{
+        height: 350px;
+        display: block;
+    }
+    .info-top .info-image{
+        display:block;
+        width: 100%;
+        height: 150px;
+        background-image: url(../Images/super-app.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .info-top div{
+    width: 100%;
+    padding: 10px 90px 0 0px;
+    }
+    .info-top div p{
+        font-size: 9pt;
+        width: 85%;
+    }
+    .info-bottom{
+        margin: 10px 90px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+    }
+    .info-bottom div p{
+        margin : 20px 0; 
+        font-size: 8pt;
+    }
+    .joinsnapp h4{
+        text-align: center;
+        font-size: 26pt;
+        margin: 30px 80px;
+    }
+    .joinsnapp>p{
+        font-size: 13pt;
+        margin-bottom: 30px;
+    }
+    .joinsnapp video{
+        width: 80%;
+    }
+    .joinsnapp-tables{
+        margin: 30px 100px;
+        width: 80%;
+        display: block;
+    }
+    .joinsnapp-tables .table{
+        padding: 40px 30px 40px 30px;
+        margin-bottom: 20px;
+        display: block;
+    }
+    .joinsnapp-tables .table img{
+        margin-right: 270px;
+        width: 90px;
+        height: 50px;
+    }
+    footer ul{
+        margin: 50px auto;
+        width: 80%;
+    }
+    footer li{
+        display: inline-block;
+    }
+    footer li a{
+        color: var(--grey-font);
+        font-size: 9pt;
+    }
+}
+@media screen and (min-width:768px) and (max-width: 840px){
+    .navigation-menu{
+        padding: 20px 0 10px 20px;
+        justify-content: end;
+        position: sticky;
+        top : 0;
+        background : white;
+        box-shadow: 0 1px 3px gainsboro;
+    }
+    .navigation-menu ul{
+        display: none;
+    }
+    header{
+        height: 250px;
+        display: block;
+    }
+    header .header-info h1{
+        font-size: 16pt;
+    }
+    header .header-info p{
+        display: none;
+    }
+    .header-info .mobile-p{
+        display: block;
+    }
+    header .header-info{
+        width: 100%;
+        height: 100%;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .header-info button a{
+        display: block;
+        border: none;
+        font-family: "Iransans";
+        font-weight: bold;
+        font-size: 10pt;
+        color: black;
+        background: var(--grey-bcgr);
+        border-radius: 5px;
+        padding: 12px 0;
+    }
+    .header-image img{
+        display: none;
+    }
+    .header-info input[type="text"]{
+        display: none;
+    }
+    .header-info input[type="submit"]{
+        display: none;
+    }
+    .download-bar{
+        display: none;
+    }
+    .services{
+        padding: 0 70px 50px 70px;
+    }
+    .services h2{
+        font-size: 12pt;
+    }
+    .services-apps-area .services-app p{
+        display: none;
+    }
+    .food{
+        margin: 30px auto;
+        height: 250px;
+        width: 736px;
+    }
+    .food a{
+        height: 250px;
+        width: 736px;
+    }
+    .info-top{
+        height: 350px;
+        display: block;
+    }
+    .info-top .info-image{
+        display:block;
+        width: 100%;
+        height: 150px;
+        background-image: url(../Images/super-app.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .info-top div{
+    width: 100%;
+    padding: 20px 15px 0 0px;
+    }
+    .info-top div p{
+        font-size: 9pt;
+        width: 95%;
+    }
+    .info-bottom{
+        margin: 10px 50px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+    }
+    .info-bottom div p{
+        margin : 20px 0; 
+        font-size: 8pt;
+    }
+    .joinsnapp h4{
+        text-align: center;
+        font-size: 26pt;
+        margin: 30px 80px;
+    }
+    .joinsnapp>p{
+        font-size: 13pt;
+        margin-bottom: 30px;
+    }
+    .joinsnapp video{
+        width: 90%;
+    }
+    .joinsnapp-tables{
+        margin: 30px 100px;
+        width: 80%;
+        display: block;
+    }
+    .joinsnapp-tables .table{
+        padding: 40px 30px 40px 30px;
+        margin-bottom: 20px;
+        display: block;
+    }
+    .joinsnapp-tables .table img{
+        margin-right: 220px;
+        width: 90px;
+        height: 50px;
+    }
+    footer ul{
+        width: 95%;
+        margin-top: 25px;
+    }
+    footer ul a{
+        font-size: 12px;
+    }
+}
+@media screen and (min-width:600px) and (max-width: 768px){
+    .navigation-menu{
+        padding: 20px 0 10px 20px;
+        justify-content: end;
+        position: sticky;
+        top : 0;
+        background : white;
+        box-shadow: 0 1px 3px gainsboro;
+    }
+    .navigation-menu ul{
+        display: none;
+    }
+    header{
+        height: 250px;
+        display: block;
+    }
+    header .header-info h1{
+        font-size: 16pt;
+    }
+    header .header-info p{
+        display: none;
+    }
+    .header-info .mobile-p{
+        display: block;
+    }
+    header .header-info{
+        width: 100%;
+        height: 100%;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .header-info button a{
+        display: block;
+        border: none;
+        font-family: "Iransans";
+        font-weight: bold;
+        font-size: 10pt;
+        color: black;
+        background: var(--grey-bcgr);
+        border-radius: 5px;
+        padding: 12px 0;
+    }
+    .header-image img{
+        display: none;
+    }
+    .header-info input[type="text"]{
+        display: none;
+    }
+    .header-info input[type="submit"]{
+        display: none;
+    }
+    .download-bar{
+        display: none;
+    }
+    .services{
+        padding: 0 30px 50px 30px;
+    }
+    .services h2{
+        font-size: 12pt;
+    }
+    .services-apps-area{
+        gap:15px;
+    }
+    .services-apps-area .services-app p{
+        display: none;
+    }
+    .services-app strong{
+        font-size: 9pt;
+    }
+    .food{
+        margin: 30px auto;
+        height: 210px;
+        width: 590px;
+    }
+    .food a{
+        height: 210px;
+        width: 590px;
+    }
+    .info-top{
+        height: 350px;
+        display: block;
+    }
+    .info-top .info-image{
+        display:block;
+        width: 100%;
+        height: 150px;
+        background-image: url(../Images/super-app.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .info-top div{
+    width: 100%;
+    padding: 20px 15px 0 0px;
+    }
+    .info-top div p{
+        font-size: 9pt;
+        width: 95%;
+    }
+    .info-bottom{
+        width: 95%;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .info-bottom div p{
+        margin : 20px 0; 
+        font-size: 8pt;
+    }
+    .joinsnapp h4{
+        text-align: center;
+        font-size: 26pt;
+        margin: 30px 80px;
+    }
+    .joinsnapp>p{
+        text-align: center;
+        font-size: 13pt;
+        margin-bottom: 30px;
+    }
+    .joinsnapp video{
+        width: 90%;
+    }
+    .joinsnapp-tables{
+        margin: 30px auto;
+        width: 90%;
+        display: block;
+    }
+    .joinsnapp-tables .table{
+        padding: 40px 30px 40px 30px;
+        margin-bottom: 20px;
+        display: block;
+    }
+    .joinsnapp-tables .table img{
+        margin-right: 190px;
+        width: 90px;
+        height: 50px;
+    }
+    footer ul{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 25px;
+    } 
+    footer ul a{
+        font-size: 10px;
+        margin-left: 5px;
+    }
+}
+@media screen and (min-width:480px) and (max-width:600px){
+        .navigation-menu{
+            padding: 20px 0 10px 20px;
+            justify-content: end;
+            position: sticky;
+            top : 0;
+            background : white;
+            box-shadow: 0 1px 3px gainsboro;
+        }
+        .navigation-menu ul{
+            display: none;
+        }
+        header{
+            height: 270px;
+            display: block;
+        }
+        header .header-info h1{
+            font-size: 16pt;
+        }
+        header .header-info p{
+            display: none;
+        }
+        .header-info .mobile-p{
+            display: block;
+        }
+        header .header-info{
+            width: 100%;
+            height: 100%;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+        .header-info button a{
+            display: block;
+            border: none;
+            font-family: "Iransans";
+            font-weight: bold;
+            font-size: 10pt;
+            color: black;
+            background: var(--grey-bcgr);
+            border-radius: 5px;
+            padding: 12px 0;
+        }
+        .header-image img{
+            display: none;
+        }
+        .header-info input[type="text"]{
+            display: none;
+        }
+        .header-info input[type="submit"]{
+            display: none;
+        }
+        .download-bar{
+            display: none;
+        }
+        .services{
+            padding: 20px 40px 20px 40px;
+        }
+        .services h2{
+            font-size: 12pt;
+        }
+        .services-apps-area{
+            gap:15px;
+        }
+        .services-app{
+            display: flex;
+            flex-direction: column;
+        }
+        .services-apps-area .services-app p{
+            display: none;
+        }
+        .services-app strong{
+            font-size: 9pt;
+        }
+        .food{
+            margin: 30px auto;
+            height: 200px;
+            width: 470px;
+        }
+        .food a{
+            height: 200px;
+            width: 470px;
+        }
+        .info-top{
+            height: 350px;
+            display: block;
+        }
+        .info-top .info-image{
+            display:block;
+            width: 100%;
+            height: 150px;
+            background-image: url(../Images/super-app.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .info-top div{
+        width: 100%;
+        padding: 20px 15px 0 0px;
+        }
+        .info-top div p{
+            font-size: 9pt;
+            width: 95%;
+        }
+        .info-bottom{
+            width: 95%;
+            margin: 10px auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .info-bottom div p{
+            margin : 20px 0; 
+            font-size: 8pt;
+        }
+        .joinsnapp h4{
+            text-align: center;
+            font-size: 20pt;
+            margin: 30px 80px;
+        }
+        .joinsnapp>p{
+            text-align: center;
+            font-size: 11pt;
+            margin-bottom: 30px;
+        }
+        .joinsnapp video{
+            width: 90%;
+        }
+        .joinsnapp-tables{
+            margin: 30px auto;
+            width: 90%;
+            display: block;
+        }
+        .joinsnapp-tables .table{
+            padding: 40px 30px 40px 30px;
+            margin-bottom: 20px;
+            display: block;
+        }
+        .joinsnapp-tables .table img{
+            margin-right: 190px;
+            width: 90px;
+            height: 50px;
+        }
+        footer ul{
+            display: grid;
+            grid-template-columns:auto auto auto auto auto ;
+            text-align: center;
+            gap:5px;
+            margin-top: 25px;
+        } 
+        footer ul a{
+            font-size: 10px;
+            margin-left: 5px;
+        }
+}
+@media screen and (max-width:480px){
+    .navigation-menu{
+        padding: 20px 0 10px 20px;
+        justify-content: end;
+        position: sticky;
+        top : 0;
+        background : white;
+        box-shadow: 0 1px 3px gainsboro;
+    }
+    .navigation-menu ul{
+        display: none;
+    }
+    header{
+        height: 270px;
+        display: block;
+    }
+    header .header-info h1{
+        font-size: 16pt;
+    }
+    header .header-info p{
+        display: none;
+    }
+    .header-info .mobile-p{
+        display: block;
+    }
+    header .header-info{
+        width: 100%;
+        height: 100%;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .header-info button a{
+        display: block;
+        border: none;
+        font-family: "Iransans";
+        font-weight: bold;
+        font-size: 10pt;
+        color: black;
+        background: var(--grey-bcgr);
+        border-radius: 5px;
+        padding: 12px 0;
+    }
+    .header-image img{
+        display: none;
+    }
+    .header-info input[type="text"]{
+        display: none;
+    }
+    .header-info input[type="submit"]{
+        display: none;
+    }
+    .download-bar{
+        display: none;
+    }
+    .services{
+        padding: 20px 40px 20px 40px;
+    }
+    .services h2{
+        font-size: 12pt;
+    }
+    .services-apps-area{
+        gap:15px;
+    }
+    .services-app{
+        display: flex;
+        flex-direction: column;
+    }
+    .services-apps-area .services-app p{
+        display: none;
+    }
+    .services-app strong{
+        font-size: 9pt;
+    }
+    .food{
+        margin: 30px auto;
+        height: 200px;
+        width: 470px;
+    }
+    .food a{
+        height: 200px;
+        width: 470px;
+    }
+    .info-top{
+        height: 350px;
+        display: block;
+    }
+    .info-top .info-image{
+        display:block;
+        width: 100%;
+        height: 150px;
+        background-image: url(../Images/super-app.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .info-top div{
+    width: 100%;
+    padding: 20px 15px 0 0px;
+    }
+    .info-top div p{
+        font-size: 9pt;
+        width: 95%;
+    }
+    .info-bottom{
+        width: 95%;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .info-bottom div p{
+        margin : 20px 0; 
+        font-size: 8pt;
+    }
+    .joinsnapp h4{
+        text-align: center;
+        font-size: 20pt;
+        margin: 30px 80px;
+    }
+    .joinsnapp>p{
+        text-align: center;
+        font-size: 11pt;
+        margin-bottom: 30px;
+    }
+    .joinsnapp video{
+        width: 90%;
+    }
+    .joinsnapp-tables{
+        margin: 30px auto;
+        width: 90%;
+        display: block;
+    }
+    .joinsnapp-tables .table{
+        padding: 40px 30px 40px 30px;
+        margin-bottom: 20px;
+        display: block;
+    }
+    .joinsnapp-tables .table img{
+        margin-right: 190px;
+        width: 90px;
+        height: 50px;
+    }
+    footer ul{
+        display: grid;
+        grid-template-columns:auto auto auto auto auto ;
+        text-align: center;
+        gap:5px;
+        margin-top: 25px;
+    }
+    footer ul a{
+        font-size: 10px;
+        margin-left: 5px;
+    }
+}
